@@ -1,0 +1,78 @@
+metadata:
+  project_name: equipment_cable_routing_planner
+  domain: equipment_cable_routing
+  units:
+    length: mm
+    angle: deg
+
+coordinate_system:
+  origin_definition: null
+  x_axis_direction: null
+  y_axis_direction: null
+  z_axis_direction: "up"
+
+space:
+  dimensions:
+    width: null
+    depth: null
+    height: null
+  boundaries: []
+  cable_trays: []
+  penetrations: []
+  restricted_zones: []
+  bend_clearance: null
+  service_clearance: null
+
+equipment:
+  - id: null
+    type: null
+    width: null
+    depth: null
+    height: null
+    weight: null
+    allowed_positions: []
+    ports:
+      - id: null
+        position: null
+        direction: null
+        connector_type: null
+    airflow_requirements: []
+    service_access_sides: []
+
+cables:
+  - id: null
+    from_port: null
+    to_port: null
+    cable_type: null
+    diameter: null
+    min_bend_radius: null
+    max_length: null
+    separation_rules: []
+    preferred_routes: []
+
+constraints:
+  hard:
+    - "respect cable bend radius"
+    - "avoid restricted zones"
+    - "keep cable length within max length"
+    - "preserve equipment service clearance"
+    - "respect separation rules"
+  soft:
+    - "minimize total cable length"
+    - "prefer cable trays"
+    - "group cables by destination"
+    - "leave expansion capacity"
+
+scenarios:
+  - id: normal_operation
+    active_equipment: []
+    active_cables: []
+    required_service_access: []
+    scoring_priorities: []
+    special_constraints: []
+
+outputs:
+  plan_view: true
+  route_table: true
+  violations_report: true
+  maintenance_notes: true

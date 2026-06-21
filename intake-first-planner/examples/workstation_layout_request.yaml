@@ -1,0 +1,113 @@
+metadata:
+  project_name: workstation_layout_planner
+  domain: workstation_layout
+  units:
+    length: mm
+    angle: deg
+    weight: kg
+
+table:
+  width: null
+  depth: null
+  top_z: null
+  origin_definition: null
+  axes:
+    x: null
+    y: null
+    z: "up"
+  edges:
+    front: null
+    back: null
+    left: null
+    right: null
+  wall_position: null
+  unavailable_side_or_shelf_constraints: []
+  allowed_overhang_directions: []
+  base_clearance: null
+  collision_clearance: null
+  disabled_regions: []
+  mounting_edges: []
+
+arms:
+  - id: null
+    target_monitor_id: null
+    brand_model: null
+    base_candidate_positions: []
+    clamp_edge_constraints: []
+    load_range: null
+    first_segment:
+      length_or_range: null
+      projection_or_range: null
+    second_segment:
+      length_or_range: null
+    vertical_offset_or_height_range: null
+    yaw1_range: null
+    yaw2_range: null
+    pitch_range: null
+    vesa_adapter_length: null
+    tube_or_capsule_radius: null
+    derived_parameters: []
+    derivation_source: null
+
+monitors:
+  - id: null
+    width: null
+    height: null
+    thickness: null
+    weight: null
+    vesa_size: null
+    preferred_bottom_z_range: null
+    preferred_center_z_range: null
+    allowed_yaw_range: null
+    allowed_x_range: null
+    allowed_y_range: null
+    within_table_x_required: null
+    allowed_overhang: null
+
+laptops:
+  - id: null
+    model: null
+    width: null
+    depth: null
+    thickness: null
+    opened_lid_angle_range: null
+    camera_touchid_keyboard_accessible: null
+    stand_usage: null
+    stand:
+      footprint: null
+      height_range: null
+    cooling_clearance_requirements: null
+
+accessories:
+  keyboard:
+    width: null
+    depth: null
+    height: null
+  mouse_area:
+    width: null
+    depth: null
+    required_side: null
+  trackpad:
+    width: null
+    depth: null
+    required_side: null
+  relative_placement_requirements: []
+
+human:
+  seating_positions: []
+  eye_position_range: null
+  preferred_viewing_distance: null
+  ergonomic_yaw_angle_range_for_secondary_monitors: null
+  acceptable_head_turn_range: null
+
+scenarios:
+  - id: null
+    active_monitors: []
+    primary_monitor: null
+    secondary_monitor_relation: null
+    active_laptops: []
+    accessory_requirements: []
+    seated_position: null
+    monitor_angle_priorities: []
+    desk_space_priority: null
+    special_constraints: []

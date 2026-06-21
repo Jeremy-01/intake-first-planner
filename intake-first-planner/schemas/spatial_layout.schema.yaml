@@ -1,0 +1,67 @@
+metadata:
+  project_name: null
+  domain: spatial_layout
+  units:
+    length: mm
+    angle: deg
+    weight: kg
+
+coordinate_system:
+  origin_definition: null
+  x_axis_direction: null
+  y_axis_direction: null
+  z_axis_direction: "up"
+
+space:
+  dimensions:
+    width: null
+    depth: null
+    height: null
+  fixed_boundaries: []
+  open_boundaries: []
+  disabled_regions: []
+  allowed_overhang:
+    directions: []
+    limits: {}
+  clearances:
+    object_object: null
+    object_wall: null
+    object_edge: null
+
+objects:
+  fixed: []
+  movable: []
+  articulated: []
+  humans: []
+
+constraints:
+  hard:
+    - boundary
+    - disabled_region
+    - collision
+    - range
+    - capacity
+    - visibility
+  soft:
+    ergonomic_angle: null
+    preserved_workspace: null
+    proximity: null
+    fold_direction: null
+
+scenarios:
+  - id: null
+    active_objects: []
+    primary_object: null
+    relationships: []
+    human_pose_or_range: null
+    required_access_zones: []
+    hard_constraints: []
+    scoring_priorities: []
+    special_constraints: []
+
+outputs:
+  top_view: svg
+  report: html
+  three_d_model: html
+  score_breakdown: true
+  reproducible_results: true

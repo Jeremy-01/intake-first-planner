@@ -1,0 +1,75 @@
+metadata:
+  project_name: apartment_furniture_layout_planner
+  domain: furniture_layout
+  units:
+    length: mm
+    angle: deg
+
+coordinate_system:
+  origin_definition: "room southwest floor corner"
+  x_axis_direction: "east"
+  y_axis_direction: "north"
+  z_axis_direction: "up"
+
+space:
+  dimensions:
+    width: null
+    depth: null
+    height: null
+  fixed_boundaries:
+    walls: []
+    doors: []
+    windows: []
+    columns: []
+  disabled_regions: []
+  circulation_clearance: null
+  wall_clearance: null
+
+objects:
+  furniture:
+    - id: null
+      type: null
+      width: null
+      depth: null
+      height: null
+      allowed_x_range: null
+      allowed_y_range: null
+      allowed_yaw_range: null
+      must_touch_wall: null
+      access_sides: []
+  fixtures: []
+
+human:
+  walking_paths: []
+  seating_positions: []
+  reach_requirements: []
+
+constraints:
+  hard:
+    - "do not block doors or windows"
+    - "preserve circulation clearance"
+    - "avoid disabled regions"
+    - "avoid furniture collisions"
+  soft:
+    - "maximize open floor area"
+    - "prefer natural-light seating"
+    - "minimize moving heavy furniture"
+
+scenarios:
+  - id: daily_living
+    active_objects: []
+    primary_activity: null
+    required_paths: []
+    scoring_priorities: []
+    special_constraints: []
+  - id: guest_sleeping
+    active_objects: []
+    primary_activity: null
+    required_clearances: []
+    scoring_priorities: []
+    special_constraints: []
+
+outputs:
+  top_view: true
+  per_scenario_report: true
+  move_plan: true

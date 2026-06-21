@@ -1,0 +1,42 @@
+metadata:
+  project_name: null
+  domain: null
+  version: "0.1.0"
+  units:
+    length: null
+    angle: null
+    weight: null
+    time: null
+
+coordinate_system:
+  origin: null
+  axes: {}
+  reference_surfaces_or_frames: []
+
+entities: []
+
+constraints:
+  hard: []
+  soft: []
+
+preferences:
+  scoring_weights: {}
+  tie_breakers: []
+
+scenarios:
+  - id: null
+    active_entities: []
+    primary_entities: []
+    required_conditions: []
+    scoring_priorities: []
+    special_constraints: []
+
+outputs:
+  reports: true
+  visualizations: []
+  machine_readable_results: true
+  recovery_docs: true
+
+assumptions:
+  approved: []
+  rejected_or_forbidden: []
