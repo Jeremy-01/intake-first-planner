@@ -62,6 +62,8 @@ scenarios:
 outputs:
   top_view: svg
   report: html
-  three_d_model: html
+  three_d_model: threejs_html
+  three_d_geometry_priority: collision_boxes
+  beginner_labels: true
   score_breakdown: true
   reproducible_results: true

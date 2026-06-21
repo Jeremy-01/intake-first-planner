@@ -11,6 +11,7 @@ from pathlib import Path
 REQUIRED_LINKS = [
     "references/intake-workflow.md",
     "references/spatial-layout-domain.md",
+    "references/threejs-visualization.md",
     "references/prompt-to-skill.md",
     "references/skill-packaging.md",
     "schemas/intake_project.schema.yaml",

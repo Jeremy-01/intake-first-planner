@@ -1,7 +1,7 @@
 interface:
   display_name: "Intake-First Planner"
-  short_description: "Reusable intake for planning and solver projects"
-  default_prompt: "Use $intake-first-planner to turn this planning or solver request into a reusable, schema-first workflow before implementation."
+  short_description: "Beginner-friendly intake for visual planners"
+  default_prompt: "Use $intake-first-planner to turn this planning or solver request into a beginner-friendly schema-first workflow with Three.js visual reports."
 
 policy:
   allow_implicit_invocation: true

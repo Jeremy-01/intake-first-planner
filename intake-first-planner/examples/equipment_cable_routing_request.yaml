@@ -73,6 +73,9 @@ scenarios:
 
 outputs:
   plan_view: true
+  three_d_model: threejs_html
+  three_d_geometry_priority: collision_boxes_and_routes
+  beginner_labels: true
   route_table: true
   violations_report: true
   maintenance_notes: true

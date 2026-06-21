@@ -111,3 +111,11 @@ scenarios:
     monitor_angle_priorities: []
     desk_space_priority: null
     special_constraints: []
+
+outputs:
+  report: html
+  top_view: svg
+  three_d_model: threejs_html
+  three_d_geometry_priority: collision_boxes
+  beginner_labels: true
+  machine_readable_results: true

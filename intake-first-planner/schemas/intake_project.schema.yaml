@@ -33,7 +33,10 @@ scenarios:
 
 outputs:
   reports: true
-  visualizations: []
+  visualizations:
+    top_view: svg
+    three_d: threejs_html
+    beginner_labels: true
   machine_readable_results: true
   recovery_docs: true
 

@@ -71,5 +71,8 @@ scenarios:
 
 outputs:
   top_view: true
+  three_d_model: threejs_html
+  three_d_geometry_priority: collision_boxes
+  beginner_labels: true
   per_scenario_report: true
   move_plan: true

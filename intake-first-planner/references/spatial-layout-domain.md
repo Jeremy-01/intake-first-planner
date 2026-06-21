@@ -98,9 +98,21 @@ For each solved scenario, report:
 - Collision and visibility check results.
 - Score breakdown.
 - Pros/cons.
-- Link or entry point for simplified 3D model if requested.
+- Link or entry point for a simplified Three.js 3D model by default.
 
 Style: light background, white cards, concise sections, visual first, analysis second, 3D last.
+
+## Beginner-Friendly Visualization
+
+Assume the user may not know what a 3D engine is. Do not ask "Do you want Three.js?" unless visualization is optional; instead say that the project will include a browser-based 3D preview using simple boxes, tubes, lines, and labels. Ask only for real-world measurements and constraints.
+
+Use Three.js for the 3D preview when geometry matters. The model should show solver geometry, not decorative realism:
+
+- Solid boxes for physical objects.
+- Translucent boxes for clearances and disabled zones.
+- Capsules or cylinders for arms, supports, tubes, or cables.
+- Lines for sight paths, routes, and constraint checks.
+- Red or orange highlights for violations.
 
 ## Workstation Layout Specialization
 
