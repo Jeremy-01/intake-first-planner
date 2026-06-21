@@ -61,3 +61,5 @@ Use $intake-first-planner to convert this workstation layout prompt into a reusa
     ├── schemas/
     └── scripts/
 ```
+
+Thanks to CSZongzi for the early groundwork that helped shape this project.
